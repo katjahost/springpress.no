@@ -23,25 +23,48 @@
         grid-template-areas:
           'logo'
           'text'
-          'link';
+          'footer';
         grid-template-rows: 2fr auto 1fr;
+        font-family: sans-serif;
       }
       h1 {
         margin: 0;
+        grid-area: logo;
       }
       h1 img {
-        width: 50vw;
-        max-width: 200px;
+        height: 20vh;
+        min-height: 100px;
       }
-      p {
+      section {
+        grid-area: text;
+        text-align: center;
+        max-width: 500px;
+        padding: 0 5em;
       }
-      a {
+      footer {
+        grid-area: footer;
+        font-size: 80%;
+        text-align: center;
+        padding: 0 2em;
+        line-height: 1.5;
+      } 
+      footer a {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 0.25em;
+      }
+      footer a:hover {
+        background-color: transparent;
       }
     </style>
   </head>
   <body>
-    <h1><img src="assets/spring.svg" /></h1>
-    <p>Some text</p>
-    <a href="https://www.katjahost.com" target="_blank">Link</a>
+    <h1><img src="assets/logo.svg" /></h1>
+    <section>
+      <p><strong>Spring Press</strong> er et nyetablert forlag med fokus på tverrestetiske prosjekter i tilknytning til kunstfeltet.</p>  
+      <p>Første utgivels er kunstboken <em>Månesyk</em> av Katja Høst.</p>
+    </section>
+    <footer>Våre bøker kan kjøpes på nettsiden til vår distributør <a href="https://tekstallmenningen.no" target="_blank">Tekstallmenningen</a></footer>
   </body>
 </html>
