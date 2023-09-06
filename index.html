@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Katja Høst</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-	<style>
-		
-	</style>
-</head>
-<body>
-	<h1><img src="assets/logo.svg" /></h1>
-	<p>Some text</p>
-	<a href="">Link</a>
-</body>
-<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Spring Press</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        height: 100%;
+        align-items: center;
+        justify-items: center;
+      }
+      body {
+        background-color: cadetblue;
+        display: grid;
+        grid-template-areas:
+          'logo'
+          'text'
+          'link';
+        grid-template-rows: 2fr auto 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><img src="assets/logo.svg" /></h1>
+    <p>Some text</p>
+    <a href="https://www.katjahost.com" target="_blank">Link</a>
+  </body>
+</html>
